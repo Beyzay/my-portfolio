@@ -84,6 +84,34 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #333;
+    color: #F9F9F9;
+}
+
+.btn:hover {
+    color: turquoise;
+}
+
+.btn:active {
+    color: #F9F9F9;
+    background-color: turquoise;
+}
+
+.project-details {
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
 footer {
     position: fixed;
     bottom: 0;
