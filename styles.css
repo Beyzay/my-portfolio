@@ -18,13 +18,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
-    padding: 0 20px;
+    margin-top: 0.25rem;
+    padding: 0 1.25rem;
     background-color: #333;
 }
 
 #brand-container a {
-    padding: 10px;
+    padding: 0.625rem;
     color: turquoise;
     text-decoration: none;
 } 
@@ -39,13 +39,13 @@ header {
 
 #nav-items {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     list-style: none;
     padding: 0;
 }
 
 .nav-item {
-    padding: 5px 10px;
+    padding: 0.3125rem 0.625rem;
     color: #F9F9F9;
     text-decoration: none;
 }
@@ -59,17 +59,17 @@ header {
 }
 
 #content-wrapper {
-    padding: 120px 20px 50px 20px;
+    padding: 4.625rem 1.25rem 3.125rem 1.25rem;
 }
 
 .content-container {
-    scroll-margin-top: 120px;
-    margin-bottom: 20px;
-    padding: 20px;
+    scroll-margin-top: 4.625rem;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: #F9F9F9;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -77,21 +77,21 @@ h2 {
 }
 
 .content-item {
-    margin-bottom: 30px;
-    padding: 20px;
+    margin-bottom: 1.875rem;
+    padding: 1.25rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
 .btn {
     flex: 1;
-    padding: 10px;
+    padding: 0.625rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: #333;
     color: #F9F9F9;
 }
@@ -114,24 +114,24 @@ h2 {
 }
 
 #contact-form {
-    max-width: 300px;
+    max-width: 18.75rem;
     margin: 0 auto;
-    padding: 10px;    
+    padding: 0.625rem;    
     border: none;
 }
 
 input[type="text"], input[type="email"], textarea {
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 0.625rem;
     border: 1px solid #333;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .btn-container {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .clear-btn:active {
@@ -141,7 +141,7 @@ input[type="text"], input[type="email"], textarea {
 
 .error-message {
     color: red;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .success-message-container {
@@ -158,24 +158,24 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 5px 0;
+    padding: 0.3125rem 0;
     text-align: center;
     font-size: smaller;
     background-color: #000000c3;
     color: white;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(0.3125rem);
+    -webkit-backdrop-filter: blur(0.3125rem);
 }
 
 /* Media queries for responsive design */
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
     header {
     position: absolute;
     }
 
     #nav-items {
         flex-direction: column;
-        gap: 5px;
+        gap: 0.3125rem;
         align-items: center;
     }
     
@@ -189,6 +189,6 @@ footer {
     }
 
     #content-wrapper {
-        padding-top: 210px;
+        padding-top: 10.25rem;
     }
 }
