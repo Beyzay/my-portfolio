@@ -68,6 +68,7 @@ header {
     padding: 20px;
     border: none;
     border-radius: 10px;
+    background-color: #F9F9F9;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -80,7 +81,7 @@ h2 {
     padding: 20px;
     border: none;
     border-radius: 10px;
-    background-color: #F9F9F9;
+    background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
