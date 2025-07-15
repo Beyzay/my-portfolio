@@ -23,15 +23,15 @@ function toggleProjectDetails(e) {
     button.textContent = isHidden ? "Show Details" : "Hide Details";
 }
 
+//------------------------------------------------------------------------------------------------------------------
 
-
-// Function to validate email format
+// Define a function to validate email format
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email.toLowerCase());
 }
 
-// Function to clear contact form error or success messages
+// Define a function to clear contact form error or success messages
 function clearContactFormMessages() {
     contactNameError.textContent = "";
     contactEmailError.textContent = "";
