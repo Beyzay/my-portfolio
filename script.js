@@ -115,3 +115,63 @@ contactClearBtn.addEventListener("click", () => {
     console.log("Contact form has been cleared!");
 });
 
+//------------------------------------------------------------------------------------------------------------------
+
+// Select the element where the location or message will be displayed
+const locationElement = document.getElementById("location");
+
+// Select the get location button
+const locationButton = document.getElementById("location-btn");
+
+// When the get location button is clicked, get and display the location
+locationButton.addEventListener("click", getLocation);
+
+
+// Define a function to get the user's location
+function getLocation() {
+
+    // Check if geolocation is supported
+    if (navigator.geolocation) {
+
+        // Display a loading message if geolocation is supported
+        locationElement.innerHTML = "Getting location 🌍";
+
+        // Get the user's current position if geolocation is supported
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+
+        // Display an error message if geolocation is not supported
+        locationElement.innerHTML = "Geolocation is not supported by this browser 😔";
+    }
+}
+
+
+// Define a function to display the user's position
+function showPosition(position) {
+
+    // Display the latitude and longitude
+    locationElement.innerHTML = `Latitude: ${position.coords.latitude}<br>Longitude: ${position.coords.longitude}`;
+}
+
+
+// Define a function to handle errors
+function showError(error) {
+
+    // Handle different error codes
+    switch (error.code) {
+        case error.PERMISSION_DENIED:
+            locationElement.innerHTML = "Please allow location access in your browser to see your location.";
+            break;
+        case error.POSITION_UNAVAILABLE:
+            locationElement.innerHTML = "Location information is unavailable.";
+            break;
+        case error.TIMEOUT:
+            locationElement.innerHTML = "The request to get user location timed out.";
+            break;
+        case error.UNKNOWN_ERROR:
+            locationElement.innerHTML = "An unknown error occured.";
+            break;    
+    }
+}
+
+//------------------------------------------------------------------------------------------------------------------

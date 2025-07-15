@@ -72,7 +72,7 @@ header {
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+h2, h4 {
    color: #333; 
 }
 
@@ -106,11 +106,28 @@ h2 {
 }
 
 .project-details {
-    padding: 0;
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .hidden {
     display: none;
+}
+
+.emoji-btn {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 2rem;
+}
+
+.emoji-btn:hover {
+    transform: scale(1.1);
+}
+
+.emoji-btn:active {
+    transform: scale(1);
+    filter: brightness(0.9);
 }
 
 #contact-form {
