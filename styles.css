@@ -113,6 +113,46 @@ h2 {
     display: none;
 }
 
+#contact-form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;    
+    border: none;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+}
+
+.clear-btn:active {
+    color: turquoise;
+    background-color: #E8E8E8;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.success-message-container {
+    text-align: center;
+    color: turquoise;
+}
+
+.success-message {
+    color: turquoise;
+}
+
 footer {
     position: fixed;
     bottom: 0;

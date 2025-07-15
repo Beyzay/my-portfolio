@@ -52,7 +52,40 @@
         <div id="contact" class="content-container">
             <h2>Contact</h2>
             <div class="content-item">
-                <p>We will be in touch soon!</p>
+                
+                <!-- Add contact form -->
+                <form id="contact-form" action="#" method="POST" novalidate>
+                    <div>
+                        <!-- Add name input field -->
+                        <div>
+                            <input type="text" name="name" id="contact-name" placeholder="Name" aria-label="Name" aria-describedby="name-error">
+                            <span class="error-message" id="contact-name-error" aria-live="polite"></span>
+                        </div>
+                        <br>
+                        <!-- Add email input field -->
+                        <div>
+                            <input type="email" name="email" id="contact-email" placeholder="Email" aria-label="Email" aria-describedby="email-error">
+                            <span class="error-message" id="contact-email-error" aria-live="polite"></span>
+                        </div>
+                        <br>
+                        <!-- Add message text area -->
+                        <div>
+                            <textarea rows="10" name="message" id="contact-message" placeholder="Message" aria-label="Message" aria-describedby="message-error"></textarea>
+                            <span class="error-message" id="contact-message-error" aria-live="polite"></span>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Add submit button -->
+                    <div class="btn-container">
+                        <button type="submit" class="btn" id="contact-send-btn">Send</button>
+                        <button type="button" class="btn clear-btn" id="contact-clear-btn">Clear</button>
+                    </div>
+                </form>
+
+                <!-- Add success message -->
+                <div class="success-message-container">
+                    <span class="success-message" id="contact-form-success" role="alert"></span>
+                </div>
             </div>
         </div>
     </main>
