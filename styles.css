@@ -1,6 +1,11 @@
 /* General page styles */
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:
+        linear-gradient(to bottom, #F9F9F9, turquoise),
+        url('../img/foggy-birds.png');
+    background-blend-mode: multiply;
+    background-size: auto;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -63,6 +68,11 @@ header {
 }
 
 .content-container {
+    background-image:
+    linear-gradient(to bottom, #F9F9F9, turquoise),
+    url('../img/foggy-birds.png');
+    background-blend-mode: multiply;
+    background-size: auto;
     scroll-margin-top: 4.625rem;
     margin-bottom: 1.25rem;
     padding: 1.25rem;
