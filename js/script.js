@@ -51,11 +51,16 @@ const contactEmailError = document.getElementById("contact-email-error");
 const contactMessageError = document.getElementById("contact-message-error");
 
 const contactFormSuccess = document.getElementById("contact-form-success");
+
+const contactSendBtn = document.getElementById("contact-send-btn");
 const contactClearBtn = document.getElementById("contact-clear-btn");
 
 // Validate each field when the contact form is submitted
 contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
+
+    // Disable the send button to prevent double click
+    contactSendBtn.disabled = true;
 
     // Clear previous error or success messages
     clearContactFormMessages();
@@ -84,6 +89,12 @@ contactForm.addEventListener("submit", (e) => {
         contactFormSuccess.textContent = "Thanks for sending your message 🙂";
         console.log("Contact form has been submitted!");
         contactForm.reset();
+
+        // Re-enable the send button after successful submission
+        contactSendBtn.disabled = false;
+    } else {
+        // Re-enable the send button immediately if validation fails
+        contactSendBtn.disabled = false;
     }
 });
 
