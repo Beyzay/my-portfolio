@@ -140,6 +140,19 @@ h2, h4 {
     filter: brightness(0.9);
 }
 
+
+#hidden-hunt-link img {
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.05s ease;
+}
+
+#hidden-hunt-link img:hover {
+    transform: scale(1.05);
+}
+
+
 #contact-form {
     max-width: 18.75rem;
     margin: 0 auto;
