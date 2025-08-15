@@ -153,6 +153,11 @@ h2, h4 {
     transform: scale(1.05);
 }
 
+#hidden-hunt-link img:active {
+    transform: scale(1);
+    filter: brightness(0.9);
+}
+
 
 #contact-form {
     max-width: 18.75rem;
