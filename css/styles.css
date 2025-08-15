@@ -128,7 +128,8 @@ h2, h4 {
     cursor: pointer;
     border: none;
     background: none;
-    font-size: 2rem;
+    font-size: 3.5rem;
+    transition: transform 0.05s ease;
 }
 
 .emoji-btn:hover {
