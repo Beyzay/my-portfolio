@@ -69,8 +69,8 @@ header {
 
 .content-container {
     background-image:
-    linear-gradient(to bottom, #F9F9F9, turquoise),
-    url('../img/foggy-birds.png');
+        linear-gradient(to bottom, #F9F9F9, turquoise),
+        url('../img/foggy-birds.png');
     background-blend-mode: multiply;
     background-size: auto;
     scroll-margin-top: 4.625rem;
