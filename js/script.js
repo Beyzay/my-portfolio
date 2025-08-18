@@ -213,7 +213,9 @@ if(localStorage.getItem("mode") === "dark") {
     // Add "dark-mode" class to "body"
     body.classList.add("dark-mode");
     // Update the dark mode toggle button label if the current "mode" is "dark"
-    darkModeToggleBtn.textContent = "Light Mode";
+    darkModeToggleBtn.textContent = "☀️";
+} else {
+    darkModeToggleBtn.textContent = "🌙";
 }
 
 // Attach an event listener to the dark mode toggle button
@@ -228,7 +230,7 @@ darkModeToggleBtn.addEventListener("click", () => {
     localStorage.setItem("mode", isDark ? "dark" : "light");
 
     // Update the dark mode toggle button label depending on the current mode
-    darkModeToggleBtn.textContent = isDark ? "Light Mode" : "Dark Mode";
+    darkModeToggleBtn.textContent = isDark ? "☀️" : "🌙";
 });
 
 //------------------------------------------------------------------------------------------------------------------
