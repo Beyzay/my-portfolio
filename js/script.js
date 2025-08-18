@@ -202,3 +202,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 //------------------------------------------------------------------------------------------------------------------
+
+// Add dark mode toggle
+// Select the dark mode toggle button and body element
+const darkModeToggleBtn = document.getElementById("dark-mode-toggle-btn");
+const body = document.body;
+
+// Apply saved mode from "localStorage" on page load
+if(localStorage.getItem("mode") === "dark") {
+    // Add "dark-mode" class to "body"
+    body.classList.add("dark-mode");
+    // Update the dark mode toggle button label if the current "mode" is "dark"
+    darkModeToggleBtn.textContent = "Light Mode";
+}
+
+// Attach an event listener to the dark mode toggle button
+darkModeToggleBtn.addEventListener("click", () => {
+    // Toggle "dark-mode" class on "body"
+    body.classList.toggle("dark-mode");
+    
+    // Declare a variable to check if currently "body" has "dark-mode" class
+    const isDark = body.classList.contains("dark-mode");
+
+    // Save the current mode to "localStorage"
+    localStorage.setItem("mode", isDark ? "dark" : "light");
+
+    // Update the dark mode toggle button label depending on the current mode
+    darkModeToggleBtn.textContent = isDark ? "Light Mode" : "Dark Mode";
+});
+
+//------------------------------------------------------------------------------------------------------------------
