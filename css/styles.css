@@ -82,7 +82,7 @@ header {
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
 
-h2, h4 {
+h2, h3, h4 {
    color: #333; 
 }
 
@@ -211,6 +211,56 @@ footer {
     color: #f8f8ff;
     backdrop-filter: blur(0.3125rem);
     -webkit-backdrop-filter: blur(0.3125rem);
+}
+
+/* Dark mode style changes */
+body.dark-mode {
+    background-image: none; 
+    background: linear-gradient(to bottom, #121212, #0f405c);
+    color: #f8f8ff;
+}
+
+body.dark-mode header {
+    background-color: #0f405c;
+}
+
+body.dark-mode #navbar {
+    background-color: #121212;
+}
+
+body.dark-mode .content-container {
+    background-image: none;
+    background: linear-gradient(to bottom, #0f405c, #121212);
+}
+
+body.dark-mode .content-item {
+    background: linear-gradient(to bottom, #0f405c, #121212);
+}
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+    color: #f8f8ff;
+}
+
+body.dark-mode .btn {
+    background-color: #222;
+}
+
+body.dark-mode .btn:active {
+    background-color: #3ac7b9;
+    color: #222;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #222;
+    color: #f8f8ff;
+}
+
+body.dark-mode .clear-btn:active {
+    background-color: #666;
+    color: turquoise;
 }
 
 /* Media queries for responsive design */
