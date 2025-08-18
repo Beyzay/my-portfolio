@@ -28,6 +28,10 @@ header {
     background-color: #333;
 }
 
+#brand-container {
+    flex: 1;
+}
+
 #brand-container a {
     padding: 0.625rem;
     color: turquoise;
@@ -40,6 +44,12 @@ header {
 
 #brand-container a:active {
     color: #e8e8e8;
+}
+
+#dark-mode-container {
+    display: flex;
+    align-items: center;
+    margin-right: 0.625rem;
 }
 
 #nav-items {
